@@ -3,7 +3,7 @@
 
 # Sets the minimum version of CMake required to build the native library.
 
-cmake_minimum_required(VERSION 3.10.2)
+cmake_minimum_required(VERSION 3.18.1)
 
 # Declares and names the project.
 
@@ -23,10 +23,10 @@ add_library( # Sets the name of the library.
         # Provides a relative path to your source file(s).
         Rpi4Gpio.cpp
 
-        /media/quest/SSD/AndroidAutomotive/hardware/interfaces/rpi4gpio/1.0/default/Android.bp
-        /media/quest/SSD/AndroidAutomotive/hardware/interfaces/rpi4gpio/1.0/default/Rpi4Gpio.cpp
-        /media/quest/SSD/AndroidAutomotive/hardware/interfaces/rpi4gpio/1.0/default/Rpi4Gpio.h
-        /media/quest/SSD/AndroidAutomotive/hardware/interfaces/rpi4gpio/1.0/default/service.cpp
+        /media/jijith/SSD/AndroidAutomotive/hardware/interfaces/rpi4gpio/1.0/default/Android.bp
+        /media/jijith/SSD/AndroidAutomotive/hardware/interfaces/rpi4gpio/1.0/default/Rpi4Gpio.cpp
+        /media/jijith/SSD/AndroidAutomotive/hardware/interfaces/rpi4gpio/1.0/default/Rpi4Gpio.h
+        /media/jijith/SSD/AndroidAutomotive/hardware/interfaces/rpi4gpio/1.0/default/service.cpp
         )
 
 # Searches for a specified prebuilt library and stores the path as a
@@ -54,15 +54,15 @@ target_link_libraries( # Specifies the target library.
         ${log-lib})
 
 include_directories(
-        /media/quest/SSD/AndroidAutomotive/out/soong/.intermediates/hardware/interfaces/rpi4gpio/1.0/android.hardware.rpi4gpio@1.0_genc++_headers/gen/
-        /media/quest/SSD/AndroidAutomotive/frameworks/native/include/
-        /media/quest/SSD/AndroidAutomotive/system/libhidl/base/include/
-        /media/quest/SSD/AndroidAutomotive/system/core/libutils/include
-        /media/quest/SSD/AndroidAutomotive/system/libhidl/transport/include
-        /media/quest/SSD/AndroidAutomotive/system/libhidl/base/include
-        /media/quest/SSD/AndroidAutomotive/out/soong/.intermediates/system/libhidl/transport/base/1.0/android.hidl.base@1.0_genc++_headers/gen
-        /media/quest/SSD/AndroidAutomotive/system/core/libcutils/include/
-        /media/quest/SSD/AndroidAutomotive/system/libhwbinder/include/
-        /media/quest/SSD/AndroidAutomotive/system/libhidl/base/include/
-        /media/quest/SSD/AndroidAutomotive/system/core/liblog/include/
+        /media/jijith/SSD/AndroidAutomotive/out/soong/.intermediates/hardware/interfaces/rpi4gpio/1.0/android.hardware.rpi4gpio@1.0_genc++_headers/gen/
+        /media/jijith/SSD/AndroidAutomotive/frameworks/native/include/
+        /media/jijith/SSD/AndroidAutomotive/system/libhidl/base/include/
+        /media/jijith/SSD/AndroidAutomotive/system/core/libutils/include
+        /media/jijith/SSD/AndroidAutomotive/system/libhidl/transport/include
+        /media/jijith/SSD/AndroidAutomotive/system/libhidl/base/include
+        /media/jijith/SSD/AndroidAutomotive/out/soong/.intermediates/system/libhidl/transport/base/1.0/android.hidl.base@1.0_genc++_headers/gen
+        /media/jijith/SSD/AndroidAutomotive/system/core/libcutils/include/
+        /media/jijith/SSD/AndroidAutomotive/system/libhwbinder/include/
+        /media/jijith/SSD/AndroidAutomotive/system/libhidl/base/include/
+        /media/jijith/SSD/AndroidAutomotive/system/core/liblog/include/
 )

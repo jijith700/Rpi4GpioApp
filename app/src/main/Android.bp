@@ -1,0 +1,42 @@
+android_app {
+    name: "Rpi4Gpio",
+
+    //vendor: true,
+
+    srcs: ["java/**/*.java",
+            "java/**/*.kt"
+    ],
+
+    resource_dirs: ["res"],
+
+    //sdk_version: "system_current",
+
+    //min_sdk_version: "30",
+
+    //sdk_version: "current",
+
+    certificate: "platform",
+
+    privileged: true,
+
+    platform_apis: true,
+    
+    static_libs: [
+        //local static library
+        "androidx-constraintlayout_constraintlayout-solver",
+        "androidx-constraintlayout_constraintlayout",
+        "com.google.android.material_material",
+        "vendor.demo.vehiclevendor-V1.0-java",
+        "android.car",
+    ],
+
+    jni_libs: ["librpi4gpio"],
+
+    optimize: {
+        enabled: false,
+    },
+
+    dex_preopt: {
+        enabled: false,
+    }
+}
