@@ -31,7 +31,7 @@ cc_library_shared {
         "liblog",
         "libutils",
         "libhidlbase",
-        "android.hardware.rpi4gpio@1.0",
+        "vendor.demo.rpi4gpio@1.0",
     ],
     // No static libraries.
     static_libs: [],

@@ -23,10 +23,10 @@ add_library( # Sets the name of the library.
         # Provides a relative path to your source file(s).
         Rpi4Gpio.cpp
 
-        /media/jijith/SSD/AndroidAutomotive/hardware/interfaces/rpi4gpio/1.0/default/Android.bp
-        /media/jijith/SSD/AndroidAutomotive/hardware/interfaces/rpi4gpio/1.0/default/Rpi4Gpio.cpp
-        /media/jijith/SSD/AndroidAutomotive/hardware/interfaces/rpi4gpio/1.0/default/Rpi4Gpio.h
-        /media/jijith/SSD/AndroidAutomotive/hardware/interfaces/rpi4gpio/1.0/default/service.cpp
+        /media/jijith/SSD/AndroidAutomotive/vendor/demo/hardware/interfaces/rpi4gpio/1.0/default/Android.bp
+        /media/jijith/SSD/AndroidAutomotive/vendor/demo/hardware/interfaces/rpi4gpio/1.0/default/Rpi4gpio.cpp
+        /media/jijith/SSD/AndroidAutomotive/vendor/demo/hardware/interfaces/rpi4gpio/1.0/default/Rpi4gpio.h
+        /media/jijith/SSD/AndroidAutomotive/vendor/demo/hardware/interfaces/rpi4gpio/1.0/default/service.cpp
         )
 
 # Searches for a specified prebuilt library and stores the path as a
@@ -54,7 +54,7 @@ target_link_libraries( # Specifies the target library.
         ${log-lib})
 
 include_directories(
-        /media/jijith/SSD/AndroidAutomotive/out/soong/.intermediates/hardware/interfaces/rpi4gpio/1.0/android.hardware.rpi4gpio@1.0_genc++_headers/gen/
+        /media/jijith/SSD/AndroidAutomotive/out/soong/.intermediates/vendor/demo/hardware/interfaces/rpi4gpio/1.0/vendor.demo.rpi4gpio@1.0_genc++_headers/gen/
         /media/jijith/SSD/AndroidAutomotive/frameworks/native/include/
         /media/jijith/SSD/AndroidAutomotive/system/libhidl/base/include/
         /media/jijith/SSD/AndroidAutomotive/system/core/libutils/include
@@ -65,4 +65,7 @@ include_directories(
         /media/jijith/SSD/AndroidAutomotive/system/libhwbinder/include/
         /media/jijith/SSD/AndroidAutomotive/system/libhidl/base/include/
         /media/jijith/SSD/AndroidAutomotive/system/core/liblog/include/
+        /media/jijith/SSD/AndroidAutomotive/out/soong/.intermediates/system/libhidl/transport/manager/1.0/android.hidl.manager@1.0_genc++_headers/gen
+        /media/jijith/SSD/AndroidAutomotive/out/soong/.intermediates/hardware/interfaces/automotive/vehicle/2.0/android.hardware.automotive.vehicle@2.0_genc++_headers/gen/
+        /media/jijith/SSD/AndroidAutomotive/out/soong/.intermediates/vendor/demo/hardware/interfaces/vehiclevendor/1.0/vendor.demo.vehiclevendor@1.0_genc++_headers/gen/
 )

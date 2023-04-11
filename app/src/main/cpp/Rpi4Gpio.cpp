@@ -4,10 +4,10 @@
 #include <log/log.h>
 #include <hidl/HidlSupport.h>
 #include <hidl/Status.h>
-#include <android/hardware/rpi4gpio/1.0/IRpi4Gpio.h>
+#include <vendor/demo/rpi4gpio/1.0/IRpi4gpio.h>
 #include "jni.h"
 
-using android::hardware::rpi4gpio::V1_0::IRpi4Gpio;
+using vendor::demo::rpi4gpio::V1_0::IRpi4gpio;
 using android::sp;
 using android::status_t;
 
@@ -30,9 +30,9 @@ jint ledOn(JNIEnv * /*env*/, jobject /*thiz*/) {
     //jint ret;
     ALOGD("------%s", __FUNCTION__);
 
-    sp<IRpi4Gpio> hidlService = IRpi4Gpio::getService();
+    sp<IRpi4gpio> hidlService = IRpi4gpio::getService();
     if (hidlService == nullptr) {
-        ALOGE("can't not get IRpi4Gpio service");
+        ALOGE("can't not get IRpi4gpio service");
         return -1;
     }
 
@@ -49,9 +49,9 @@ jint ledOff(JNIEnv * /*env*/, jobject /*thiz*/) {
     //jint ret;
     ALOGD("------%s", __FUNCTION__);
 
-    sp<IRpi4Gpio> hidlService = IRpi4Gpio::getService();
+    sp<IRpi4gpio> hidlService = IRpi4gpio::getService();
     if (hidlService == nullptr) {
-        ALOGE("can't not get IRpi4Gpio service");
+        ALOGE("can't not get IRpi4gpio service");
         return -1;
     }
 
